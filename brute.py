@@ -12,32 +12,11 @@ from mitmproxy import types
 from furl import furl
 
 
-class Brute:
+class Util:
     def __init__(self):
         pass
 
-    def check_url_param(self, url, param):
-        params = list(url.args.keys())
-
-        if not param:
-            return False
-
-        if param not in params:
-            return False
-
-        return True
-
-    @command.command('brute.test')
-    def test(self, flows: typing.Sequence[flow.Flow]) -> None:
-        for flow in flows:
-            try:
-                flow.request.urlencoded_form = flow.request.urlencoded_form.set_all('user_login', ['a@what.com'])
-                ctx.log.info(flow.request.urlencoded_form)
-            except:
-                pass
-
-    # Util commands
-    @command.command('brute.follow_301')
+    @command.command('util.follow_301')
     def follow_301(self, flows: typing.Sequence[flow.Flow]) -> None:
         for flow in flows:
             if not flow.response.status_code == 301:
@@ -51,7 +30,7 @@ class Brute:
 
             ctx.master.commands.call("replay.client", [flow])
 
-    @command.command('brute.search')
+    @command.command('util.search')
     def search(self, flows: typing.Sequence[flow.Flow], search: str) -> None:
         s = "COMP6443{(.*?)}"
 
@@ -73,49 +52,63 @@ class Brute:
 
         ctx.log.info("Searching found {} items".format(found))
 
-    # target: url, cookie, param: q, range_nums: 1:100
-    @command.command('brute.enum')
-    def enum(self, flows: typing.Sequence[flow.Flow], target: str, param: str, range_nums: str) -> None:
+class Brute:
+    def __init__(self):
+        pass
+
+    def _brute(self, flows: typing.Sequence[flow.Flow], part: str, param: str, word_list: typing.List[str]) -> None:
         for flow in flows:
             try:
-                if target == 'url':
-                    '''if not self.check_url_param(url, param):
-                        ctx.log.error('Invalid param')
-                        return'''
+                if part == 'url':
                     pass
-                elif target == 'cookie':
+                elif part == 'path':
                     pass
-                elif target == 'form':
+                elif part == 'cookie':
+                    pass
+                elif part == 'form':
+                    pass
+                elif part == 'json':
                     pass
                 else:
-                    ctx.log.error('Invalid target')
+                    ctx.log.error('Invalid part')
                     return
 
-                try:
-                    from_r = int(range_nums.split(':')[0])
-                    to_r = int(range_nums.split(':')[1]) + 1
-                except:
-                    ctx.log.error("Range of numbers must be in the form x:y")
-                    return
-
-                for i in range(from_r, to_r):
+                for el in word_list:
                     nf = flow.copy()
 
-                    if target == 'url':
+                    if part == 'url':
                         url  = furl(flow.request.url)
 
                         if param in url.args:
                             del url.args[param]
 
-                        url.add({ param: i })
+                        url.add({ param: el })
 
                         nf.request.url = url.url
 
-                    elif target == 'cookie':
-                        nf.request.cookies.set_all(param, [str(i)])
+                    elif part == 'path':
+                        url  = furl(flow.request.url)
+                        url.path = param
 
-                    elif target == 'form':
-                        nf.request.urlencoded_form.set_all(param, [str(i)])
+                        nf.request.url = url.url
+
+                    elif part == 'cookie':
+                        nf.request.cookies.set_all(param, [el])
+
+                    elif part == 'form':
+                        nf.request.urlencoded_form.set_all(param, [el])
+                    
+                    elif part == 'json':
+                        #nf.request._set_urlencoded_form('{ ok: 2 }')
+                        jd = json.loads(nf.request.content)
+                        jd[param] = el
+
+                        ctx.log.info(json.dumps(jd))
+
+                        nf.request.content = json.dumps(jd).encode('utf8')
+                        nf.request.headers["content-type"] = "application/json"
+
+                        ctx.log.info(json.dumps(jd))
 
                     if "view" in ctx.master.addons:
                         ctx.log.error("TEST")
@@ -126,74 +119,39 @@ class Brute:
             except:
                 pass
 
+    @command.command('brute.enum')
+    def enum(self, flows: typing.Sequence[flow.Flow], part: str, param: str, range_nums: str) -> None:
+        try:
+            from_r = int(range_nums.split(':')[0])
+            to_r = int(range_nums.split(':')[1]) + 1
+        except:
+            ctx.log.error("Range of numbers must be in the form x:y")
+            return
+
+        word_list = []
+
+        for x in range(from_r, to_r):
+            word_list.append(str(x))
+            # for 0000-9999 word_list.append('{:04d}'.format(x))
+
+        self._brute(flows, part, param, word_list)
+
     @command.command('brute.list')
-    def b_list(self, flows: typing.Sequence[flow.Flow], target: str, param: str, path: types.Path) -> None:
-        for flow in flows:
-            try:
-                url  = furl(flow.request.url)
+    def b_list(self, flows: typing.Sequence[flow.Flow], part: str, param: str, path: types.Path) -> None:
+        if not os.path.isfile(path):
+            ctx.log.error('Invalid wordlist')
+            return
 
-                if target == 'url':
-                    '''if not self.check_url_param(url, param):
-                        ctx.log.error('Invalid param')
-                        return'''
-                    pass
-                elif target == 'cookie':
-                    pass
-                elif target == 'form':
-                    pass
-                elif target == 'json':
-                    pass
-                else:
-                    ctx.log.error('Invalid target')
-                    return
+        word_list = []
 
-                if not os.path.isfile(path):
-                    ctx.log.error('Invalid wordlist')
-                    return
+        with open(path, 'r') as f:
+            for line in f.readlines():
+                word_list.append(line.strip())
 
-                with open(path, 'r') as f:
-                    for line in f.readlines():
-                        line = line.strip()
+        self._brute(flows, part, param, word_list)
 
-                        nf = flow.copy()
-
-                        if target == 'url':
-                            url  = furl(flow.request.url)
-
-                            if param in url.args:
-                                del url.args[param]
-
-                            url.add({ param: line })
-
-                            nf.request.url = url.url
-
-                        elif target == 'cookie':
-                            nf.request.cookies.set_all(param, [line])
-
-                        elif target == 'form':
-                            nf.request.urlencoded_form.set_all(param, [line])
-                        
-                        elif target == 'json':
-                            #nf.request._set_urlencoded_form('{ ok: 2 }')
-                            jd = json.loads(nf.request.content)
-                            jd[param] = line
-
-                            ctx.log.info(json.dumps(jd))
-
-                            nf.request.content = json.dumps(jd).encode('utf8')
-                            nf.request.headers["content-type"] = "application/json"
-
-                            ctx.log.info(json.dumps(jd))
-
-                        if "view" in ctx.master.addons:
-                            ctx.log.error("TEST")
-
-                            ctx.master.commands.call("view.flows.add", [nf])
-
-                        ctx.master.commands.call("replay.client", [nf])
-            except:
-                pass
 
 addons = [
+    Util(),
     Brute()
 ]
